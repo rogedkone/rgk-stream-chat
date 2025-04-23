@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 28px;
+  background-color: #272727;
+  padding: 0 10px;
+  user-select: none;
+}
+
+.move {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+.title {
+  -webkit-app-region: drag;
+}
+
+.setting {
+  &:hover {
+    color: cyan;
+  }
+}
+
+.maximize {
+  z-index: 100;
+
+  &:hover {
+    color: orange;
+  }
+}
+
+.close {
+  &:hover {
+    color: red;
+  }
+}

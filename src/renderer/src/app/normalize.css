@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}

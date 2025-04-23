@@ -1,0 +1,1 @@
+export { useGlobalStores } from "./useGlobalStores";
