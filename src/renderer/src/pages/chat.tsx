@@ -33,9 +33,9 @@ export const Chat = observer(() => {
             />
           ) : (
             <Entities.Chat.Message.User
-              id={message.id}
-              text={message.text}
+              service="goodgame"
               user_name={message.user_name}
+              text={message.text}
             />
           )}
         </div>

@@ -1,29 +1,23 @@
-import { EyeOutlined, MessageOutlined } from "@ant-design/icons";
 import { Assets } from "@renderer/shared/assets";
 import { Flex } from "antd";
-import s from "./_service.module.scss";
+import s from "./_card.module.scss";
+import { CardProps } from "./types";
 
-export const Service = ({
+export const Card = ({
   icon,
   guests,
   users,
   status = "offline",
   onClick,
-}: {
-  icon: "goodGame";
-  guests: number | null;
-  users: number | null;
-  status: "online" | "offline" | "error" | "connecting";
-  onClick: () => void;
-}) => {
+}: CardProps) => {
   const svgIcons = {
-    goodGame: <Assets.Svg.Logo.GoodGame className={s.logo} />,
+    goodgame: <Assets.Svg.Services.GoodGame className={s.logo} />,
   };
 
   return (
     <Flex
       vertical
-      className={s.service}
+      className={s.card}
       justify="space-between"
       gap={4}
       onClick={onClick}
@@ -32,12 +26,12 @@ export const Service = ({
         {svgIcons[icon]}
         <Flex vertical gap={2}>
           <Flex gap={2}>
-            <EyeOutlined className={s.icon} />
+            <Assets.Svg.Icons.Eye className={s.icon} />
             <span>{guests || "~"}</span>
           </Flex>
           <Flex gap={2}>
-            <MessageOutlined className={s.icon} />
-            <span>{users || "~"}</span>
+            <Assets.Svg.Icons.Message className={s.icon} />
+            <span>{users.length || "~"}</span>
           </Flex>
         </Flex>
       </Flex>

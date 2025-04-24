@@ -1,4 +1,4 @@
-import { IGoodGameMessage } from "@renderer/features/sockets/types";
+import { IGoodGameMessage } from "@renderer/features/services/good-game/types";
 import { makeAutoObservable } from "mobx";
 
 interface INotification {
@@ -23,7 +23,7 @@ interface IMessage
 
 export class AppStore {
   isMaximized: boolean = false;
-  services: string[] = [];
+  services: Set<string> = new Set(["goodgame"]);
   notifications: INotification[] = [];
   messages: IMessage[] = [];
   screen: "chat" | "settings" = "chat";

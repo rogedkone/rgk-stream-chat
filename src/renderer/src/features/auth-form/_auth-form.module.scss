@@ -1,0 +1,21 @@
+.logo {
+  width: 40px;
+  height: 40px;
+
+  * {
+    fill: #000;
+  }
+}
+.done,
+.undone {
+  width: 20px;
+  height: 16px;
+}
+
+.done {
+  fill: var(--success);
+}
+
+.undone {
+  fill: var(--disabled);
+}

@@ -2,4 +2,11 @@
   --bg: #303030;
   --item-bg: #575656;
   --disabled: #d9d9d9;
+
+  --success: #0dff00;
+  --error: #ff0000;
+  --warn: #ff7b00;
+  --select: #02fecd;
+
+  --goodgame: #90b0db;
 }

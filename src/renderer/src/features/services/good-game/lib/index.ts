@@ -16,7 +16,7 @@ export const joinChannel = async (wss: WebSocket, channel_id: string) => {
   );
 };
 
-export const getUsers = async (wss: WebSocket) => {
+export const getUsers = (wss: WebSocket) => {
   wss.send(
     JSON.stringify({
       type: "get_users_list2",

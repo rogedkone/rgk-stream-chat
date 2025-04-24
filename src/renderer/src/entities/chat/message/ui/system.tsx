@@ -16,9 +16,9 @@ export const System = ({
   };
 
   return (
-    <Flex align="center" justify="center" className={s.system} gap={4}>
+    <Flex align="center" justify="center" className={s.system} gap={4} wrap>
       {icons[service]}
-      <b>{user_name}</b> <b>{text}</b>
+      <b>{user_name}</b> <span className={s.text}>{text}</span>
     </Flex>
   );
 };

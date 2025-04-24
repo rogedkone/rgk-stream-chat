@@ -8,7 +8,15 @@
 }
 
 .user {
+  font-size: 14px;
 }
 
 .system {
+  font-size: 14px;
+}
+
+.goodgame {
+  > b {
+    color: var(--goodgame);
+  }
 }

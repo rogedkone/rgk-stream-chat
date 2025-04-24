@@ -1,5 +1,5 @@
 import { GoodGame } from "./good-game";
 
-export const Sockets = {
+export const Services = {
   GoodGame,
 };

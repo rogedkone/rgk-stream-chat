@@ -1,7 +1,7 @@
-import { Auth } from "./auth";
-import { Sockets } from "./sockets";
+import { AuthForm } from "./auth-form";
+import { Services } from "./services";
 
 export const Features = {
-  Auth,
-  Sockets,
+  AuthForm,
+  Services,
 };
